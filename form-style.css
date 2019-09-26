@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.main{
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(rgb(60, 106, 167), rgb(94, 172, 94))
+}
+input[type='text']{
+    height: 50px;
+    padding: 10px;
+    color: rgb(17, 100, 100);
+    border: 2px solid rgb(224, 231, 230);
+}
+.main{
+    padding: 10em;
+}
+.form-title{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 2em;
+}
