@@ -2,12 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    background-color: rgb(211, 219, 219);
+}
 .main{
     width: 70%;
     margin: auto;
     margin-top: 5em;
     margin-bottom: 3em;
-    background-image: linear-gradient(rgb(60, 106, 167), rgb(94, 172, 94));
+    background-image: linear-gradient( rgb(242, 246, 247), rgb(163, 166, 170));
     padding: 5em;
     box-shadow: 4px 4px 10px rgb(68, 71, 71);
 }
@@ -36,6 +39,7 @@ textarea{
     transform: translateX(-50%);
     border: 1px solid blanchedalmond;
     padding: 10px;
+    box-shadow: 5px 5px 10px grey;
 }
 button{
     padding: 5px;
