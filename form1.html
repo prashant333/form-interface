@@ -9,33 +9,41 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- <span class="header-image">
+    <img src="" alt="">
+  </span> -->
   <div class="main">
       <form action="#">
-        <span class="form-title">Leave a message for us</span>
+        <span class="form-title is-capitalized">Leave us a Message</span>
         <div class="columns">
-          <div class="column">
-            <label for="name">Name</label>
+          <div class="column is-size-4 is-one-fifth">
+            <label for="name"> <span class="is-uppercase">Name</span></label>
           </div>
-          <div class="column" data-validator="Name is required">
-            <input type="text" name="first name" placeholder="first name" id="fname">
+          <div class="column is-two-fifth"  data-validator="Name is required">
+            <input class="is-size-5" type="text" name="first name" placeholder="first name" id="fname">
           </div>
-          <div class="column">
-            <input type="text" name="last name" placeholder="last name" id="lname">
+          <div class="column is-two-fifth">
+            <input class="is-size-5" type="text" name="last name" placeholder="last name" id="lname">
           </div>
         </div>
         <div class="columns">
-          <div class="column">
-            <label for="email">
-              Email
-            </label>
+          <div class="column is-size-4 is-one-fifth">
+            <label for="email"> <span class="is-uppercase">Email</span></label>
           </div>
-          <div class="column">
-            <input type="text" name="email" id="email" placeholder="Your email">
+          <div class="column is-two-fifth">
+            <input class="is-size-5" type="text" name="email" id="email" placeholder="Your email">
           </div>
+          <div class="column is-two-fifth"></div>
         </div>
         <div class='columns'>
+          <div class="column is-full">
+            <textarea class="is-size-5" name="comment" id="comm" cols="60" rows="10" placeholder="Your comments..."></textarea>
+          </div>
+        </div>
+        <div class="columns">
           <div class="column">
-            <textarea name="comment" id="comm" cols="70" rows="10"></textarea>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
           </div>
         </div>
       </form>

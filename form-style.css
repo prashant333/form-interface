@@ -1,25 +1,44 @@
 *{
     margin: 0px;
     padding: 0px;
-
 }
 .main{
-    width: 80%;
+    width: 70%;
     margin: auto;
-    background-image: linear-gradient(rgb(60, 106, 167), rgb(94, 172, 94))
+    margin-top: 5em;
+    margin-bottom: 3em;
+    background-image: linear-gradient(rgb(60, 106, 167), rgb(94, 172, 94));
+    padding: 5em;
+    box-shadow: 4px 4px 10px rgb(68, 71, 71);
 }
 input[type='text']{
     height: 50px;
+    width: 100%;
     padding: 10px;
     color: rgb(17, 100, 100);
     border: 2px solid rgb(224, 231, 230);
 }
-.main{
-    padding: 10em;
-}
 .form-title{
-    display: block;
+    display:inline-block;
     margin: auto;
+    margin-bottom: 1em;
     padding: 10px;
     font-size: 2em;
+    /* positioning the element in the center */
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+textarea{
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    border: 1px solid blanchedalmond;
+    padding: 10px;
+}
+button{
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(96, 160, 80);
 }
