@@ -3,7 +3,7 @@
     padding: 0px;
 }
 html{
-    background-color: rgb(211, 219, 219);
+    background-color: rgb(136, 138, 138);
 }
 .main{
     width: 70%;
@@ -12,6 +12,9 @@ html{
     margin-bottom: 3em;
     background-image: linear-gradient( rgb(242, 246, 247), rgb(163, 166, 170));
     padding: 5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     box-shadow: 4px 4px 10px rgb(68, 71, 71);
 }
 input[type='text']{
