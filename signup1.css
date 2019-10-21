@@ -16,9 +16,12 @@ body{
     box-shadow: 4px 10px 20px rgb(132, 156, 175);   
 }
 .box h1{
-    color: rgb(51, 184, 184);
+    /* color: rgb(51, 184, 184); */
     text-transform: uppercase;
-    font-weight: 100;   
+    font-weight: 100;
+    background: linear-gradient(to left, white, rgb(51, 184, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 .box input[type="text"],.box input[type="password"]{
     background: none;
