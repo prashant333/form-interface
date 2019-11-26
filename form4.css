@@ -44,6 +44,16 @@ body{
     display: block;
     padding: 10px;
 }
+.container input[type="password"]{
+    background: none;
+    width: 70%;
+    color: rgb(221, 227, 240);
+    border: none;
+    outline: none;
+    border-bottom:1.5px solid rgb(93, 135, 226);
+    display: block;
+    padding: 10px;
+}
 #controls{
     padding: 10px;
 }
