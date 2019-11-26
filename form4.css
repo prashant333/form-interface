@@ -14,6 +14,7 @@ body{
     background:rgb(49, 49, 49);
     box-shadow: 16px 10px 15px rgb(93, 135, 226);
     border-radius: 5px;
+    width: 22em;
 }
 
 #logo{
@@ -30,12 +31,39 @@ body{
     margin: 10px;
     display: block;
     margin: auto;
-    /* margin-bottom: 20px; */
     transform: translate(0%, -40%);
 }
 
 .container input[type="text"]{
-    
+    background: none;
+    width: 70%;
+    color: rgb(221, 227, 240);
+    border: none;
+    outline: none;
+    border-bottom:1.5px solid rgb(93, 135, 226);
     display: block;
     padding: 10px;
+}
+#controls{
+    padding: 10px;
+}
+#controls input[ type='button']{
+    padding: 15px 10px;
+    width: 70%;
+    display: block;
+    background: rgb(93, 135, 226);
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#controls input[type='reset']{
+    display: block;
+    padding: 5px;
+    background: none;
+    color: rgb(221, 227, 240);
+    border: none;
+    cursor: pointer;
 }
