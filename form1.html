@@ -21,10 +21,10 @@
             <label for="name"> <span class="is-uppercase">Name</span></label>
           </div>
           <div class="column is-two-fifth"  data-validator="Name is required">
-            <input class="is-size-5" type="text" name="first-name" placeholder="first name" id="fname" value="1">
+            <input class="is-size-5" type="text" name="first-name" placeholder="first name" id="fname" value="">
           </div>
           <div class="column is-two-fifth">
-            <input class="is-size-5" type="text" name="last-name" placeholder="last name" id="lname">
+            <input class="is-size-5" type="text" name="last-name" placeholder="last name" id="lname" value="">
           </div>
         </div>
         <div class="columns">
@@ -32,7 +32,7 @@
             <label for="email"> <span class="is-uppercase">Email</span></label>
           </div>
           <div class="column is-two-fifth">
-            <input class="is-size-5" type="text" name="email" id="email" placeholder="Your email">
+            <input class="is-size-5" type="text" name="email" id="email" placeholder="Your email" value="">
           </div>
           <div class="column is-two-fifth"></div>
         </div>
@@ -49,5 +49,28 @@
         </div>
       </form>
   </div>
+  <script>
+
+    let inputEvent =() =>{
+      let form = document.forms[0];
+      let input1 = document.getElementById('fname');
+      let input2 = document.getElementById('lname');
+      input1.addEventListener('focusout', ()=>{
+        if (!input1.value.includes("@")) {
+          input1.classList.add('invalid')
+        }
+        // let elem = form.elements.first-name;
+        // console.log('THe entered value is',input1.value)
+        // alert('you entered ' + input1.value);
+      })
+
+      input1.addEventListener('focusin', function(){
+        if(this.classList.contains('invalid')){
+          this.classList.remove('invalid')
+        }
+      })
+    }
+    inputEvent()
+  </script>
 </body>
 </html>

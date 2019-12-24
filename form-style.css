@@ -54,4 +54,14 @@ button:hover{
     background-color: rgb(17, 100, 100);
     color: white;
 }
-
+.invalid{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    color: rgb(231, 84, 26) !important;
+    border: 2px solid rgb(245, 71, 48) !important;
+    /* background-color: rgb(245, 186, 186); */
+}
+/* #fname{
+    border-color: red;
+} */
