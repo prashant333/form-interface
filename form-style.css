@@ -8,6 +8,7 @@ html{
 .main{
     width: 70%;
     margin: auto;
+    font-size: 16px;
     margin-top: 5em;
     margin-bottom: 3em;
     background-image: linear-gradient( rgb(242, 246, 247), rgb(163, 166, 170));
@@ -16,6 +17,7 @@ html{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 4px 4px 10px rgb(68, 71, 71);
+    transition: ease-in 0.5s;
 }
 input[type='text']{
     height: 50px;
@@ -34,6 +36,7 @@ input[type='text']{
     position: relative; 
     left: 50%;
     transform: translateX(-50%);
+    transition: ease-in 0.5s;
 }
 textarea{
     position: relative;
@@ -65,3 +68,13 @@ button:hover{
 /* #fname{
     border-color: red;
 } */
+
+@media screen and (max-width:670px){
+ .form-title{
+     font-size: 1.25em;
+ }
+ .main{
+     width: 90%;
+     
+ }   
+}
