@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= yes">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../bulma/bulma-0.7.4/bulma-0.7.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -17,7 +17,7 @@
       <form action="#">
         <span class="form-title is-capitalized">Leave us a Message</span>
         <div class="columns">
-          <div class="column is-size-4 is-one-fifth">
+          <div class="column  is-one-fifth">
             <label for="name"> <span class="is-uppercase">Name</span></label>
           </div>
           <div class="column is-two-fifth"  data-validator="Name is required">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-size-4 is-one-fifth">
+          <div class="column  is-one-fifth">
             <label for="email"> <span class="is-uppercase">Email</span></label>
           </div>
           <div class="column is-two-fifth">
@@ -71,6 +71,12 @@
       })
     }
     inputEvent()
+    function preventClose(){
+      window.onbeforeunload = function() {
+      return false;
+    }
+    }
+    preventClose()
   </script>
 </body>
 </html>
