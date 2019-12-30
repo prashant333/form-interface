@@ -34,7 +34,7 @@
           <div class="column is-two-fifth">
             <input class="is-size-5" type="text" name="email" id="email" placeholder="Your email" value="">
           </div>
-          <div class="column is-two-fifth"></div>
+          <div class="column is-two-fifth error-message"></div>
         </div>
         <div class='columns'>
           <div class="column is-four-fifth">
@@ -56,9 +56,11 @@
       let input1 = document.getElementById('fname');
       let input2 = document.getElementById('lname');
       let input3 = document.getElementById('email');
+      let errMess = document.querySelector('.error-message')
       input3.addEventListener('focusout', ()=>{
-        if (!input3.value.includes("@")) {
+        if (!input3.value.includes("@" && ".com")) {
           input3.classList.add('invalid')
+          errMess.innerHTML = 'Invalid email'
         }
         // let elem = form.elements.first-name;
         // console.log('THe entered value is',input1.value)
@@ -68,6 +70,7 @@
       input3.addEventListener('focusin', function(){
         if(this.classList.contains('invalid')){
           this.classList.remove('invalid')
+          errMess.innerHTML = ''
         }
       })
     }
