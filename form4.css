@@ -15,6 +15,7 @@ body{
     box-shadow: 16px 10px 15px rgb(114, 115, 117);
     border-radius: 5px;
     width: 22em;
+    transition: ease-in-out 0.5s;
 }
 
 #logo{
@@ -56,10 +57,12 @@ body{
 }
 #controls{
     padding: 10px;
+    height: 120px;
 }
 #controls input[ type='button']{
     padding: 15px 10px;
-    width: 70%;
+    width: 50%;
+    height: 50px;
     display: block;
     background: rgb(93, 135, 226);
     color: white;
@@ -67,6 +70,13 @@ body{
     border-radius: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+    font-size: 1em;
+    transition: cubic-bezier(.41,-0.38,.67,1.35) 0.35s;
+}
+
+#controls input[type = 'button']:hover{
+    width: 60%;
+    height: 60px;
 }
 
 #controls input[type='reset']{
@@ -76,4 +86,20 @@ body{
     color: rgb(221, 227, 240);
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        width: 80%;
+    }
+    #controls input[ type='button']{
+        font-size: 0.70em;
+        padding: 10px 5px;
+        height: 35px;
+        width: 50%;
+    }
+    /* #controls input[ type='button']:hover{
+        width: 50%;
+        height: 50px;
+    } */
 }
