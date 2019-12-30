@@ -55,28 +55,29 @@
       let form = document.forms[0];
       let input1 = document.getElementById('fname');
       let input2 = document.getElementById('lname');
-      input1.addEventListener('focusout', ()=>{
-        if (!input1.value.includes("@")) {
-          input1.classList.add('invalid')
+      let input3 = document.getElementById('email');
+      input3.addEventListener('focusout', ()=>{
+        if (!input3.value.includes("@")) {
+          input3.classList.add('invalid')
         }
         // let elem = form.elements.first-name;
         // console.log('THe entered value is',input1.value)
         // alert('you entered ' + input1.value);
       })
 
-      input1.addEventListener('focusin', function(){
+      input3.addEventListener('focusin', function(){
         if(this.classList.contains('invalid')){
           this.classList.remove('invalid')
         }
       })
     }
     inputEvent()
-    function preventClose(){
-      window.onbeforeunload = function() {
-      return false;
-    }
-    }
-    preventClose()
+    // function preventClose(){
+    //   window.onbeforeunload = function() {
+    //   return false;
+    // }
+    // }
+    // preventClose()
   </script>
 </body>
 </html>
